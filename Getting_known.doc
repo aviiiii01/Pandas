@@ -69,4 +69,20 @@ Starting with a basic introduction and ends up with cleaning and plotting data:
         #fillna():
             allows to replace the values from Nan to another .. and return a new data set.
             for original one use inplace=True
+            
+            We can also replace the Nan items of selected columns..("df.fillna({"Calories": 130}, inplace=True"))
+        *NOTE* the value which need to be replced can be the mean, median and mode values from all dataset.
 
+#Data of Wrong Format
+    1: remove the rows
+        df.drop(index,"column_name)
+    2:  convert all cells in the columns into the same format.
+        inside a loop:
+            df.loc[x,"fre"]=ires
+
+#For Duplicate Rows..
+    To discover duplicates, we can use the duplicated() method.
+        df.duplicated()... return True if yes otherwise return False for every row...
+    to delete duplicate rows:
+        df.drop_duplicates()
+        
