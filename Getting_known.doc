@@ -1,0 +1,72 @@
+Pandas is a Python library.
+Pandas is used to analyze data.
+
+Starting with a basic introduction and ends up with cleaning and plotting data:
+
+#Intro:
+    Pandas is a Python library used for working with data sets.
+    It has functions for analyzing, cleaning, exploring, and manipulating data.
+    The name "Pandas" has a reference to both "Panel Data", and "Python Data Analysis" and was created by Wes McKinney in 2008.
+
+
+
+#Why Use Pandas?
+    Pandas allows us to analyze big data and make conclusions based on statistical theories.
+    Pandas can clean messy data sets, and make them readable and relevant.
+    Relevant data is very important in data science.
+
+#Pandas gives you answers about the data. Like:
+    Is there a correlation between two or more columns?
+    What is average value?
+    Max value?
+    Min value?
+
+#What is a Series?
+    A Pandas Series is like a column in a table.
+    It is a one-dimensional array holding data of any type.
+
+#LOC
+    stands for locate rows
+    it is an attribute, used to return one or more specified rows
+
+#read_csv()
+    used to read a csv file and store in a dataframe variable...
+
+#INSIDERS:
+    The number of rows returned is defined in Pandas option settings.
+
+##Analyzing:
+
+#head():
+    is used to get the specific number of top rows of the dataframe
+    by default top 5 rows
+#tail():
+    is used to show the last rows of dataframe
+#info():
+    gives information about the data set.
+    The info() method also tells us how many Non-Null values there are present in each column,
+
+
+
+
+##DATA CLEANING:
+    Data cleaning means fixing bad data in your data set.
+    Bad data could be:
+        Empty cells
+        Data in wrong format
+        Wrong data
+        Duplicates
+
+#Removing some empty cells(Nan cells)
+    1:One way to deal with empty cells is to remove rows that contain empty cells.
+        #df.dropna():
+            will remove the rows from the dataset and By default, the dropna() method returns a new
+                    DataFrame, and will not change the original.
+            to change the original onethen use inplace=True inside the braces of dropna...
+
+    2:Another way of dealing with empty cells is to insert a new value instead.
+      This way you do not have to delete entire rows just because of some empty cells.
+        #fillna():
+            allows to replace the values from Nan to another .. and return a new data set.
+            for original one use inplace=True
+
