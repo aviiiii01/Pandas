@@ -112,3 +112,7 @@ Starting with a basic introduction and ends up with cleaning and plotting data:
         A histogram needs only one column.
         A histogram shows us the frequency of each interval, e.g. how many workouts lasted between 50 and 60 minutes?
                 kind="hist"
+
+#To download the cleaned data set as a csv file :
+    df.to_csv("name_given_to _file)
+    
